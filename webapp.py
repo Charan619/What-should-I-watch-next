@@ -7,7 +7,7 @@ import streamlit as st
 
 
 # loading the saved model
-loaded_model = cloudpickle.load(open('F:\Github\What-should-I-watch-next\\findsim.sav', 'rb'))
+loaded_model = cloudpickle.load(open('findsim.sav', 'rb'))
 
 
 # creating a function for Prediction
@@ -18,7 +18,7 @@ def finalpred(input_data):
     
 
     # changing the input_data to numpy array
-    df = pd.read_pickle('F:\Github\What-should-I-watch-next\\df.pkl')
+    df = pd.read_pickle('df.pkl')
     # reshape the array as we are predicting for one instance
     titles=df['original_title']
     titles=titles.values.tolist()
