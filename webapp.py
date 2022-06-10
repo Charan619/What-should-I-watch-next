@@ -4,7 +4,9 @@ import pandas as pd
 import pickle
 import cloudpickle
 import streamlit as st
+from PIL import Image
 
+img=Image.open('logo.png')
 
 # loading the saved model
 loaded_model = cloudpickle.load(open('findsim.sav', 'rb'))
@@ -33,7 +35,7 @@ def finalpred(input_data):
   
 def main():
     
-    
+    st.set_page_config(page_title='WSWN',page_icon=img)
     # giving a title
     st.title('What should I watch Next')
     
