@@ -48,7 +48,7 @@ def main():
         st.image(image)
         st.subheader('Type in the name of the movie you last watched and get 5 suggestions you might like!!')
         st.write('A popularity+content based recommender which suggests movies similar to the user’s favourite one using keywords of movies’ genre, era, plot, cast and more.')
-        st.write("Notebook for creating Model: [link](https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py)")
+        st.write("Notebook for creating Model: [link](https://github.com/Charan619/What-should-I-watch-next/blob/master/What%20Should%20I%20Watch%20Next.ipynb)")
     # giving a title
     st.title('What should I watch Next?')
     st.markdown("<h5 style='text-align: right; color: red;'>Created by Charan K R</h1>", unsafe_allow_html=True)
